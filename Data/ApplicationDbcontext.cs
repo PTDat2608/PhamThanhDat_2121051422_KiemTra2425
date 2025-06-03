@@ -8,6 +8,7 @@ namespace PTD_KTRA.Data
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
         {}
         public DbSet<Test> Test { get; set; } = default!;
+        public DbSet<Ca2> Ca2 { get; set; } = default!;
     }
 
 }

@@ -10,7 +10,7 @@ using PTD_KTRA.Data;
 namespace PTD_Ktra.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20250526014153_Create_Table_Ca2")]
+    [Migration("20250603020959_Create_Table_Ca2")]
     partial class Create_Table_Ca2
     {
         /// <inheritdoc />
@@ -19,15 +19,37 @@ namespace PTD_Ktra.Migrations
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "9.0.5");
 
+            modelBuilder.Entity("PTD_KTRA.Models.Ca2", b =>
+                {
+                    b.Property<string>("MyProperty")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Address")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<int>("Age")
+                        .HasColumnType("INTEGER");
+
+                    b.HasKey("MyProperty");
+
+                    b.ToTable("Ca2");
+                });
+
             modelBuilder.Entity("PTD_KTRA.Models.Test", b =>
                 {
+                    b.Property<int>("TestId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
                     b.Property<string>("HoTen")
+                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.Property<int>("Masv")
                         .HasColumnType("INTEGER");
 
-                    b.HasKey("HoTen");
+                    b.HasKey("TestId");
 
                     b.ToTable("Test");
                 });

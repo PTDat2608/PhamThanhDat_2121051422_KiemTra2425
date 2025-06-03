@@ -16,15 +16,37 @@ namespace PTD_Ktra.Migrations
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "9.0.5");
 
+            modelBuilder.Entity("PTD_KTRA.Models.Ca2", b =>
+                {
+                    b.Property<string>("MyProperty")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Address")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<int>("Age")
+                        .HasColumnType("INTEGER");
+
+                    b.HasKey("MyProperty");
+
+                    b.ToTable("Ca2");
+                });
+
             modelBuilder.Entity("PTD_KTRA.Models.Test", b =>
                 {
+                    b.Property<int>("TestId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
                     b.Property<string>("HoTen")
+                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.Property<int>("Masv")
                         .HasColumnType("INTEGER");
 
-                    b.HasKey("HoTen");
+                    b.HasKey("TestId");
 
                     b.ToTable("Test");
                 });

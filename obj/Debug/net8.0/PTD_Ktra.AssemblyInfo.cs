@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PTD_Ktra")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f56fa59d17aa9234dd358f9e15d52ab909160e89")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+341f60498f2f970c3ec54b82d205286eec85a9a4")]
 [assembly: System.Reflection.AssemblyProductAttribute("PTD_Ktra")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PTD_Ktra")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
